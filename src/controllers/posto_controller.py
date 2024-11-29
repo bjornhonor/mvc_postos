@@ -2,7 +2,6 @@ from typing import List, Optional
 from models.posto_model import Posto
 from views.posto_view import PostoView
 
-
 class PostoController:
     """Controlador para gerenciar as operações relacionadas aos postos."""
 
@@ -44,7 +43,7 @@ class PostoController:
     def ver_ranking_mundial(self) -> None:
         """Exibe o ranking mundial de postos."""
         self.view.exibir_ranking_mundial(self.postos_mundiais)
-        input("\nPressione Enter para retornar ao menu.")
+        input("Pressione Enter para retornar ao menu.")
 
     def ranquear_postos(self) -> None:
         """Permite ao usuário inserir suas avaliações para cada posto."""
@@ -63,7 +62,7 @@ class PostoController:
     def editar_avaliacoes(self) -> None:
         """Permite ao usuário editar suas avaliações."""
         if not self.postos_usuario:
-            self.view.exibir_mensagem("Você ainda não ranqueou os postos.")
+            self.view.exibir_mensagem("\n(Você ainda não ranqueou os postos.)")
             return
 
         self.view.exibir_lista_usuario(self.postos_usuario)
@@ -83,10 +82,10 @@ class PostoController:
     def visualizar_tabela_usuario(self) -> None:
         """Exibe a tabela de avaliações do usuário."""
         if not self.postos_usuario:
-            self.view.exibir_mensagem("Você ainda não ranqueou os postos.")
+            self.view.exibir_mensagem("\n(Você ainda não ranqueou os postos.)")
             return
         self.view.exibir_lista_usuario(self.postos_usuario)
-        input("\nPressione Enter para retornar ao menu.")
+        input("Pressione Enter para retornar ao menu.")
 
     def _ordenar_postos_usuario(self) -> None:
         """Ordena a lista de postos do usuário do melhor para o pior."""

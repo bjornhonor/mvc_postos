@@ -1,9 +1,21 @@
 import sys
 import os
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import pytest
 from src.models.posto_model import Posto
 
-def test_posto_criacao():
-    posto = Posto("Posto Teste", 5.0)
-    assert posto.nome == "Posto Teste"
-    assert posto.avaliacao == 5.0
+def test_criacao_posto():
+    nome = "Posto Teste"
+    avaliacao = 4.5
+    descricao = "Descrição do posto teste."
+    posto = Posto(nome, avaliacao, descricao)
+    
+    assert posto.nome == nome
+    assert posto.avaliacao == avaliacao
+    assert posto.descricao == descricao
+
+def test_atualizacao_avaliacao():
+    posto = Posto("Posto Atualizável", 3.0, "Descrição inicial.")
+    novo_valor = 4.7
+    posto.avaliacao = novo_valor
+    assert posto.avaliacao == novo_valor

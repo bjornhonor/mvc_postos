@@ -53,7 +53,7 @@ pytest tests/
 ### **Teste de Tipos com MyPy**
 
 ```bash
-mypy src/
+mypy src/indicar_o_arquivo_xD.py
 ```
 
 ### **Teste de Estática Pylint**
@@ -90,6 +90,10 @@ requirements.txt
 
 ### **Integrantes:**
 
+# Bruno Carrara
+# Filipe Dias
+# Gabriel Trindade
+# Vitor
 
 
 

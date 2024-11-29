@@ -45,10 +45,10 @@ class PostoView:
 
     def exibir_lista_usuario(self, postos: List[Posto]) -> None:
         """Exibe a lista de postos ranqueados pelo usuário."""
-        print("\n--- Sua Tabela de Avaliações ---")
+        print("\n--- Sua Tabela de Avaliações ---\n")
         for idx, posto in enumerate(postos, start=1):
             print(f"{idx}. {posto.nome} - Sua Avaliação: {posto.avaliacao}")
-            print(f"   Descrição: {posto.descricao}")
+            print(f"   Descrição: {posto.descricao}\n")
 
     def solicitar_indice_posto(self, postos: List[Posto]) -> Optional[int]:
         """Solicita ao usuário que escolha um posto pelo índice."""
