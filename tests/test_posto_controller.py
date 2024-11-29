@@ -1,4 +1,7 @@
-from controllers.posto_controller import PostoController
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.controllers.posto_controller import PostoController
 
 def test_adicionar_posto():
     controller = PostoController()

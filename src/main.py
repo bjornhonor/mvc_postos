@@ -1,10 +1,12 @@
+"""Módulo principal do sistema de ranking de postos de gasolina."""
+
 from controllers.posto_controller import PostoController
 
 def main() -> None:
+    """Função principal que inicia o programa."""
     controller = PostoController()
-    controller.adicionar_posto("Posto A", 4.5)
-    controller.adicionar_posto("Posto B", 3.8)
-    controller.mostrar_postos()
+    controller.iniciar()
+
 
 if __name__ == "__main__":
     main()
