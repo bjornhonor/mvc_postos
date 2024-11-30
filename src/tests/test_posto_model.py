@@ -1,6 +1,4 @@
-
-from src.models.posto_model import Posto
-
+from models.posto_model import Posto
 
 def test_criacao_posto():
     nome = "Posto Teste"

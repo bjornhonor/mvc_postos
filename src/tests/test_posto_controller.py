@@ -1,7 +1,7 @@
 import pytest
-from src.controllers.posto_controller import PostoController
-from src.models.posto_model import Posto
-
+from unittest.mock import patch
+from controllers.posto_controller import PostoController
+from models.posto_model import Posto
 
 @pytest.fixture
 def controller():
@@ -41,7 +41,7 @@ def test_editar_avaliacoes(controller, monkeypatch):
     controller.ranquear_postos()
     
     # Em seguida, editamos a avaliação do segundo posto
-    inputs_editar = iter(['2', '4.9', ''])
+    inputs_editar = iter(['1', '4.9', ''])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs_editar))
     controller.editar_avaliacoes()
     

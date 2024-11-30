@@ -47,7 +47,7 @@ python src/main.py
 ### **Testes Unitários**
 
 ```bash
-pytest tests/
+pytest src
 ```
 
 ### **Teste de Tipos com MyPy**
