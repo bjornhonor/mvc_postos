@@ -2,6 +2,7 @@
 
 from controllers.posto_controller import PostoController
 
+
 def main() -> None:
     """Função principal que inicia o programa."""
     controller = PostoController()

@@ -53,13 +53,19 @@ pytest src
 ### **Teste de Tipos com MyPy**
 
 ```bash
-mypy src/indicar_o_arquivo_xD.py
+mypy src
+```
+
+**Ou mais completo, checando cada função**
+
+```bash
+mypy src --check-untyped-defs
 ```
 
 ### **Teste de Estática Pylint**
 
 ```bash
-pylint src/
+pylint src
 ```
 
 ## Grupo

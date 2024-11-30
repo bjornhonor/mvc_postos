@@ -1,5 +1,10 @@
-from models.posto_model import Posto
+"""
+Módulo posto_view.py
+
+Este módulo exibe as operações relacionadas aos postos."""
+
 from typing import List, Optional
+from models.posto_model import Posto
 
 
 class PostoView:
@@ -36,9 +41,8 @@ class PostoView:
             avaliacao = float(input(f"\nAvalie o posto '{posto.nome}' (0.0 - 5.0): "))
             if 0.0 <= avaliacao <= 5.0:
                 return round(avaliacao, 1)
-            else:
-                print("Avaliação deve estar entre 0.0 e 5.0.")
-                return None
+            print("Avaliação deve estar entre 0.0 e 5.0.")
+            return None
         except ValueError:
             print("Entrada inválida. Digite um número.")
             return None
@@ -56,9 +60,9 @@ class PostoView:
             indice = int(input("\nDigite o número do posto que deseja editar: "))
             if 1 <= indice <= len(postos):
                 return indice - 1
-            else:
-                print("Índice fora do intervalo. Tente novamente.")
-                return None
+
+            print("Índice fora do intervalo. Tente novamente.")
+            return None
         except ValueError:
             print("Entrada inválida. Digite um número inteiro.")
             return None

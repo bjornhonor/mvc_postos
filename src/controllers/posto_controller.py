@@ -1,6 +1,13 @@
+"""
+Módulo posto_controller.py
+
+Este módulo gerencia as operações relacionadas aos postos, incluindo criação, 
+leitura, atualização e exclusão.
+"""
+
+from typing import List
 from models.posto_model import Posto
 from views.posto_view import PostoView
-from typing import List, Optional
 
 
 class PostoController:
