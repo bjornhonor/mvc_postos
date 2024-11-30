@@ -1,5 +1,5 @@
-from typing import List, Optional
 from models.posto_model import Posto
+from typing import List, Optional
 
 
 class PostoView:

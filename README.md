@@ -61,39 +61,15 @@ mypy src/indicar_o_arquivo_xD.py
 ```bash
 pylint src/
 ```
-## Estrutura do Projeto
-
-mvc_postos/
-src/
-__init__.py
-controllers/
-__init__.py
-posto_controller.py
-models/
-__init__.py
-posto_model.py
-views/
-__init__.py
-posto_view.py
-main.py
-tests/
-__init__.py
-test_posto_controller.py
-test_posto_model.py
-test_posto_view.py
-.gitignore
-pyproject.toml
-setup.py
-requirements.txt
 
 ## Grupo
 
 ### **Integrantes:**
 
-# Bruno Carrara
-# Filipe Dias
-# Gabriel Trindade
-# Vitor
+- **Bruno Carrara**
+- **Filipe Dias**
+- **Gabriel Trindade**
+- **Vitor**
 
 
 

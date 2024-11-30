@@ -1,6 +1,7 @@
-from typing import List, Optional
 from models.posto_model import Posto
 from views.posto_view import PostoView
+from typing import List, Optional
+
 
 class PostoController:
     """Controlador para gerenciar as operações relacionadas aos postos."""

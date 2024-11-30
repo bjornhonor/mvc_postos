@@ -1,10 +1,7 @@
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pytest
-from unittest.mock import patch
 from src.controllers.posto_controller import PostoController
 from src.models.posto_model import Posto
+
 
 @pytest.fixture
 def controller():
